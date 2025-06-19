@@ -83,6 +83,9 @@ return {
             -- Enable diagnostics if using rust-analyzer
             diagnostics = {
               enable = diagnostics == "rust-analyzer",
+              disabled = {
+                "unresolved-proc-macro",
+              },
             },
             procMacro = {
               enable = true,
